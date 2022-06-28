@@ -1,0 +1,40 @@
+<resources>
+        <string name="app_name"> Movie Tickets Reservation</string>
+    <string name="companyName">Book Your Show</string>
+    <string name="title">Welcome !</string>
+    <string name="guestBtnText">Enter as User</string>
+    <string name="adminBtnText">Enter as Admin</string>
+    <string name="aboutUs">About Us</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="selectMovieAdmin">Movie Scheduler</string>
+    <string name="txtSelectDate">Select Date</string>
+    <string name="txtstartTime">Start  Time</string>
+    <string name="txtRunTime">Run Time </string>
+    <string name="txtCleaningTime">Cleaning Time</string>
+    <string name="txtCloseTime">Theatre-CloseTime</string>
+    <string name="btnSchedule">Schedule</string>
+    <string name="selectMovieGuest">Select a movie to Watch</string>
+    <string name="textViewDate">Select Date</string>
+    <string name="textViewDate1">dd/mm/yy</string>
+    <string name="spinnerDate">Schedule</string>
+    <string name="textViewTime">Select Time</string>
+    <string name="textViewTime1">00 : 00 : 00</string>
+    <string name="spinnerTime">Schedule</string>
+    <string name="textViewTickets">Select Tickets</string>
+    <string name="textLogin">Log In</string>
+    <string name="txtLogin">LOGIN</string>
+    <string name="txtRegister">REGISTER</string>
+    <string name="btnPickDate">Pick Date</string>
+    <string name="goBack">Back to HomePage</string>
+    <string name="txtMovieScheduled">Movie Scheduled</string>
+
+    <string name="btnProceedToPay">Select Seats</string>
+
+    <string name="pickSeatTitle">Pick Your Seats</string>
+    <string name="btnConfirmSeats">Confirm Seats and pay</string>
+    <string name="receiptTitle">Your Receipt</string>
+    <string name="printTicket">Print Ticket</string>
+    <string name="ticketTitle">Your Ticket</string>
+    <string name="btnbookAnother">Book another Movie</string>
+
+</resources>

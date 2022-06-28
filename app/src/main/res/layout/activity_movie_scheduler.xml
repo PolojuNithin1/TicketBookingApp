@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@drawable/background_image_one_signup"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.a300272555.movieticketapp.MovieScheduler">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        android:text="@string/selectMovieAdmin"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="0.01"
+        android:layout_marginTop="20dp">
+
+        <ListView
+            android:id="@+id/listPictures"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="?attr/listPreferredItemPaddingLeft"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/txtStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="65dp"
+            android:background="?attr/colorButtonNormal"
+            android:text="@string/txtstartTime"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtStart"
+            android:layout_alignBottom="@+id/txtStart"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginBottom="-11dp"
+            android:layout_toRightOf="@+id/txtStart"
+            android:background="?attr/colorButtonNormal"
+            android:text="@string/txtRunTime"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStart"
+            android:layout_alignStart="@+id/txtStart"
+            android:layout_alignLeft="@+id/txtStart"
+            android:layout_alignRight="@+id/txtStart"
+            android:layout_marginStart="-3dp"
+            android:layout_marginLeft="-3dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginRight="-15dp"
+            android:text="Pick Time"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/showRun"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_marginStart="-10dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginBottom="22dp"
+            android:text="Pick Time"
+            android:textSize="10sp" />
+
+
+
+        <TextView
+            android:id="@+id/showStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnStart"
+            android:layout_alignStart="@+id/btnStart"
+            android:layout_below="@+id/btnStart"
+            android:layout_marginTop="21dp"
+            android:background="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/showRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/showStart"
+            android:layout_alignLeft="@+id/btnRun"
+            android:layout_alignStart="@+id/btnRun"
+            android:background="@android:color/background_light"
+            android:textSize="18sp" />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btnDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView6"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="-51dp"
+            android:layout_marginRight="133dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_toStartOf="@+id/btnStart"
+            android:layout_toLeftOf="@+id/btnRun"
+            android:text="@string/btnPickDate" />
+
+        <TextView
+            android:id="@+id/txtShowDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/btnDatePicker"
+            android:layout_toRightOf="@+id/btnDatePicker"
+            android:background="?attr/colorButtonNormal"
+            android:gravity="center"
+            android:text="yyyy/mm/dd"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showStart"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="-9dp"
+            android:layout_weight="0.07"
+            android:text="@string/btnSchedule" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Check Booked  Seats" />
+
+</LinearLayout>
